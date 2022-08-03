@@ -24,14 +24,22 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #e7f5ff;
+  /* background-color: #e7f5ff; */
+  background-color: black;
 }
-
-.header img {
-  height: 40px;
-  width: 105px;
+.img {
+  display: flex;
 }
-
+.img h1 {
+  font-size: 20px;
+  color: white;
+}
+.img img {
+  height: 35px;
+  width: 40px;
+  margin-left: 13px;
+  margin-top: -5px;
+}
 .navbar {
   height: 20vh;
   display: flex;
@@ -49,7 +57,8 @@ header {
 .navbar-link:visited {
   display: inline-block;
   text-transform: uppercase;
-  color: #212529;
+  /* color: #212529; */
+  color: yellow;
   transition: all 0.3s;
   font-weight: 500;
 }
@@ -67,7 +76,8 @@ header {
   width: 4rem;
   height: 3.5rem;
   cursor: pointer;
-  color: #212529;
+  /* color: #212529; */
+  color: white;
 }
 
 .mobile-nav-icon[name="close-outline"] {
@@ -79,7 +89,9 @@ header {
   .mobile-navbar-btn {
     display: block;
     z-index: 4;
-    border: 3px solid #212529;
+    /* border: 3px solid #212529; */
+    border: 3px solid white;
+
     color: #212529;
   }
   .navbar {
@@ -102,6 +114,11 @@ header {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+  }
+
+  .navbar-link:link,
+  .navbar-link:visited {
+    color: #212529;
   }
   .navbar-list li:hover {
     padding-left: 20px;
